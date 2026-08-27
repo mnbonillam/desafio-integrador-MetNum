@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#20252b;line-height:1.55}
+header{background:#17212b;color:white;padding:34px 0}
+header h1{margin:0 0 6px;font-size:2rem}
+header p{margin:0;color:#d8e0e7}
+.container{width:min(1050px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:white;border-bottom:1px solid #dfe4e8}
+.nav-inner{display:flex;gap:10px;padding:10px 0;overflow:auto}
+nav a{text-decoration:none;color:#17212b;padding:8px 13px;border-radius:8px;font-weight:700;white-space:nowrap}
+nav a:hover{background:#e9eef2}
+main{padding:24px 0 40px}
+.card{background:white;border:1px solid #dfe4e8;border-radius:14px;padding:24px;margin:0 0 22px;box-shadow:0 3px 12px rgba(0,0,0,.04)}
+.intro{border-left:5px solid #34495e}
+.title-row{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+h2{margin-top:0;color:#17212b}
+.badge{background:#edf1f4;border-radius:999px;padding:5px 10px;font-size:.85rem;white-space:nowrap}
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
+label{font-weight:700}
+input{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid #c9d0d6;border-radius:8px;font-size:1rem}
+button{background:#17212b;color:#fff;border:0;border-radius:8px;padding:11px 18px;font-weight:700;cursor:pointer}
+button:hover{opacity:.88}
+.result{margin-top:20px;background:#f7f9fa;border:1px solid #dfe4e8;border-radius:10px;padding:18px;overflow-x:auto}
+.result h3{margin-top:0}
+.result table{width:100%;border-collapse:collapse;margin:12px 0}
+.result th,.result td{border:1px solid #d5dce1;padding:9px;text-align:left}
+.result th{background:#edf1f4}
+.step{padding:9px 0;border-bottom:1px solid #e2e6e9}
+.step:last-child{border-bottom:0}
+.formula{font-family:"Cambria Math",serif;font-size:1.08rem;background:#f7f9fa;border-radius:8px;padding:11px;margin:9px 0}
+footer{text-align:center;padding:25px;background:#17212b;color:#d8e0e7}
+@media(max-width:600px){.card{padding:18px}.title-row{flex-direction:column}header h1{font-size:1.5rem}}

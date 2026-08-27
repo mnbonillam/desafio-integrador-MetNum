@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Integrador - Metodos Numericos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Desafío Integrador — Metodos Numericos</h1>
+    <p>Error absoluto · Error relativo porcentual · Series de Taylor · Propagación del error</p>
+  </div>
+</header>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#ej1">Ejercicio 1</a>
+    <a href="#ej2">Ejercicio 2</a>
+    <a href="#ej3">Ejercicio 3</a>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="intro card">
+    <h2>Resolución interactiva</h2>
+    <p>Los tres ejercicios del desafío aparecen cargados con los datos originales. Puedes modificar los datos y pulsar <b>Resolver</b> para obtener nuevamente los cálculos.</p>
+  </section>
+
+  <section id="ej1" class="card">
+    <div class="title-row">
+      <h2>Ejercicio 1 — Error absoluto, relativo y propagación</h2>
+      <span class="badge">7.5 pts</span>
+    </div>
+    <p>Un ingeniero mide el lado de una placa cuadrada. Se calcula el error absoluto, el error relativo porcentual y la propagación del error al área.</p>
+    <div class="inputs">
+      <label>Valor aproximado xa (cm)<input id="e1xa" type="number" step="any" value="12.4"></label>
+      <label>Valor verdadero xv (cm)<input id="e1xv" type="number" step="any" value="12.5"></label>
+    </div>
+    <button onclick="resolver1()">Resolver ejercicio 1</button>
+    <div id="r1" class="result"></div>
+  </section>
+
+  <section id="ej2" class="card">
+    <div class="title-row">
+      <h2>Ejercicio 2 — Taylor, error y residuo de Lagrange</h2>
+      <span class="badge">16.5 pts</span>
+    </div>
+    <p>Para f(x) = eˣ se construyen los polinomios de Taylor de grado 1 y 2 alrededor de a = 0 y se aproxima eˣ. También se calcula una cota mediante el residuo de Lagrange.</p>
+    <div class="inputs">
+      <label>Valor x<input id="e2x" type="number" step="any" value="0.3"></label>
+      <label>Centro a<input id="e2a" type="number" step="any" value="0"></label>
+    </div>
+    <button onclick="resolver2()">Resolver ejercicio 2</button>
+    <div id="r2" class="result"></div>
+  </section>
+
+  <section id="ej3" class="card">
+    <div class="title-row">
+      <h2>Ejercicio 3 — Síntesis integradora</h2>
+      <span class="badge">6 pts + análisis</span>
+    </div>
+    <p>Péndulo simple: g = 4π²L/T². Se calcula el valor experimental, los errores y la propagación mediante derivadas parciales. Finalmente se usa Taylor de grado 1 en T alrededor de T = 2.</p>
+    <div class="inputs">
+      <label>Longitud L (m)<input id="e3L" type="number" step="any" value="1.000"></label>
+      <label>Incertidumbre ΔL (m)<input id="e3dL" type="number" step="any" value="0.002"></label>
+      <label>Período T (s)<input id="e3T" type="number" step="any" value="2.006"></label>
+      <label>Incertidumbre ΔT (s)<input id="e3dT" type="number" step="any" value="0.004"></label>
+      <label>Valor real de g (m/s²)<input id="e3greal" type="number" step="any" value="9.8"></label>
+    </div>
+    <button onclick="resolver3()">Resolver ejercicio 3</button>
+    <div id="r3" class="result"></div>
+  </section>
+
+  <section class="card theory">
+    <h2>Fórmulas utilizadas</h2>
+    <div class="formula">Ea = |xv − xa|</div>
+    <div class="formula">Er(%) = |xv − xa| / |xv| × 100</div>
+    <div class="formula">Pn(x) = Σ [ f⁽ᵏ⁾(a) / k! ] (x − a)ᵏ</div>
+    <div class="formula">Δy ≈ |f′(x)| Δx</div>
+    <div class="formula">Δy ≈ Σ |∂f/∂xi| Δxi</div>
+  </section>
+</main>
+
+<footer>
+  <p>Desafío Integrador — Metodos Numericos</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
