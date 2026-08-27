@@ -1,4 +1,5 @@
-# Desafío Integrador — Cálculo I
+# Desafío Integrador — Metodos Numericos
+
 
 Página web interactiva para los 3 ejercicios del desafío integrador.
 
