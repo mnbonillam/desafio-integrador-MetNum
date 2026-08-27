@@ -13,4 +13,4 @@ Página web interactiva para los 3 ejercicios del desafío integrador.
 2. Series de Taylor de grado 1 y 2 para e^x, errores y cota de Lagrange.
 3. Péndulo simple: error, derivadas parciales, propagación y Taylor de primer orden.
 
-Los cálculos siguen el enunciado proporcionado para el Desafío Integrador de Cálculo I.
+Los cálculos siguen el enunciado proporcionado para el Desafío Integrador de Metodos Numericos.
